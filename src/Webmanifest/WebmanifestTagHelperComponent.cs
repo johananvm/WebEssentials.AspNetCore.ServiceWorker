@@ -5,7 +5,7 @@ namespace WebEssentials.AspNetCore.Pwa
 {
     internal class WebmanifestTagHelperComponent : TagHelperComponent
     {
-        private const string _link = "\t<link rel=\"manifest\" href=\"" + Constants.WebManifestRoute + "\" />\r\n";
+        private const string _link = "\t<link rel=\"manifest\" crossorigin=\"use-credentials\" href=\"" + Constants.WebManifestRoute + "\" />\r\n";
         private const string _themeFormat = "\t<meta name=\"theme-color\" content=\"{0}\" />\r\n";
         private PwaOptions _options;
         private readonly IServiceProvider _serviceProvider;
